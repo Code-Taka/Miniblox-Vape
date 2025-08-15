@@ -17,7 +17,7 @@
 
 	async function execute(url, oldScript) {
 		if (oldScript) oldScript.type = 'javascript/blocked';
-		let data = await fetch("link").then(e => e.text());
+		let data = await fetch("https://github.com/Code-Taka/Miniblox-Vape/blob/main/injection.js").then(e => e.text());
 		if (oldScript) oldScript.type = 'module';
 		eval(data.replace("scripturl", url));
 	}
